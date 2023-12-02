@@ -1,24 +1,24 @@
 #include<stdio.h>
 int main()
 	{
-	int a,b,c;
-	printf("Enter the value of a: ");
-	scanf("%d", &a);
-	printf("Enter the value of b: ");
-	scanf("%d", &b);
-	printf("Enter the value of c: ");
-	scanf("%d", &c);
-	if (a>b && a>c)
-	{
-		printf("a=%d is largest number",a);
-	}
-	else if (b>a && b>c)
-	{
-		printf("b=%d is largest number",b);
-	}
-	else
-	{
-		printf("c=%d is largest number",c);
-	}
+	int n,a,b=0;
+	printf("Enter the number of enteries: ");
+	scanf("%d",&n);
+		for (int i=1;i<=n;i++)
+		{
+			printf("Enter %d number: ",i );
+			scanf("%d",&a);
+			if(b<=a)
+			{	b=a;	}
+			else
+			{	b=b;	}			
+		}
+		printf("The greatest number is: %d",b);
 	return 0;
 	}
+	
+	
+	
+	
+	
+	
