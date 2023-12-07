@@ -6,8 +6,10 @@ int main()
 	int a;
 	printf("ENTER THE NUMBER : ");
 	scanf("%d",&a);
-	(a/2==0)?printf("NUMBER IS EVEN"):printf("NUMBER IS ODD");
+	if (a%2==0)
+	printf("NUMBER IS EVEN");
+	else
+	printf("NUMBER IS ODD");
 
     return 0;
 }
-
